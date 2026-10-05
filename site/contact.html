@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rahmaya-Banks International Construction</title>
+    <!-- Link to your shared stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="site-body">
+<!-- Navigation -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html"><img class="logo" src="pictures/Sitelogo3.PNG" alt="R&b-LOGO"></a>
+        <!--<div class="nav-brand">Rahmaya-Banks | International Construction</div>-->
+        <!-- Hamburger Menu Toggle Button -->
+        <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <!-- Desktop Links -->
+        <div class="nav-links">
+            <div class="dropdown">Services
+                <div class="dropdown-content">
+                    <!-- Nested Submenu for Residential -->
+                    <div class="dropdown-submenu">
+                        <a href="#" class="submenu-toggle">Residential ▸</a>
+                        <div class="sub-dropdown-content">
+                            <a href="carpentry.html">Carpenter Services</a>
+                            <a href="drywall.html">DryWall Services</a>
+                            <a href="painting.html">Painting Services</a>
+                            <a href="roofer_siding.html">Roofer and Sider Services</a>
+                        </div>
+                    </div>
+                    <a href="#">Commercial</a>
+                </div>
+            </div>
+            <a href="gallery.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="mobile-menu" hidden>
+        <a href="#shop" class="mobile-link">Services</a>
+        <a href="gallery.html" class="mobile-link">Portfolio</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+    </nav>
+
+    <!-- Main Contact Section -->
+    <main class="contact-page-container">
+        <header class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Ready to start your next construction, remodeling, or renovation project? Contact us today.</p>
+        </header>
+
+        <div class="contact-content-grid">
+            <!-- Contact Info Box -->
+            <div class="contact-info-card">
+                <h3>Project Inquiries</h3>
+                <p>We work closely with clients to bring architectural layouts and custom builds to life. Reach out
+                    using the form or through our direct details below:</p>
+
+                <ul class="contact-details-list">
+                    <li><strong>Email:</strong> info@rahmayabanksconstruction.com</li>
+                    <li><strong>Phone:</strong> (404) 502-5103</li>
+                    <li><strong>Hours:</strong> Mon - Fri: 8:00 AM – 5:00 PM</li>
+                </ul>
+            </div>
+
+            <!-- Contact Form Box -->
+            <div class="contact-form-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Service Needed</label>
+                        <select id="projectType" name="projectType">
+                            <option value="construction">Ground-Up Construction</option>
+                            <option value="remodeling">Remodeling</option>
+                            <option value="renovation">Renovation</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell us about your project scope..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="formSuccess" class="form-success-msg" style="display: none;">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Rahmaya-Banks International Construction. All rights reserved.</p>
+    </footer>
+
+    <!-- Contact Page Script -->
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+    <!-- JavaScript for Hamburger Menu Toggle -->
+    <script src="burger.js"></script>
+</body>
+
+</html>

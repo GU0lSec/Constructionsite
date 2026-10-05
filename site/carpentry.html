@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpentry - Services</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="site-body">
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html"><img class="logo" src="pictures/Sitelogo3.PNG" alt="R&b-LOGO"></a>
+        <!--<div class="nav-brand">Rahmaya-Banks | International Construction</div>-->
+        <!-- Hamburger Menu Toggle Button -->
+        <button class="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <!-- Desktop Links -->
+        <div class="nav-links">
+            <div class="dropdown">Services
+                <div class="dropdown-content">
+                    <!-- Nested Submenu for Residential -->
+                    <div class="dropdown-submenu">
+                        <a href="#" class="submenu-toggle">Residential ▸</a>
+                        <div class="sub-dropdown-content">
+                            <a href="carpentry.html">Carpenter Services</a>
+                            <a href="drywall.html">DryWall Services</a>
+                            <a href="painting.html">Painting Services</a>
+                            <a href="roofer_siding.html">Roofer and Sider Services</a>
+                        </div>
+                    </div>
+                    <a href="#">Commercial</a>
+                </div>
+            </div>
+            <a href="gallery.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="mobile-menu" hidden>
+            <a href="#shop" class="mobile-link">Services</a>
+            <a href="gallery.html" class="mobile-link">Portfolio</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Portfolio & Slideshow Content -->
+    <main class="portfolio-page-container">
+        <header class="portfolio-header">
+            <h1></h1>
+            <p>Explore Our Craftsmanship In Carpentry</p>
+        </header>
+
+        <!-- Slideshow Highlight Section (10 Pictures)-->
+        <div class="portfolio-section-box">
+            <div class="slideshow-container">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="pictures/deck1.PNG" alt="deck1">
+                    <div class="slide-caption"></div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="pictures/deck2.JPG" alt="deck2">
+                    <div class="slide-caption"></div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="pictures/deck3.JPG" alt="deck3">
+                    <div class="slide-caption"></div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="pictures/deck4.JPG" alt="deck4">
+                    <div class="slide-caption"></div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="pictures/FrontStep_Porch.PNG" alt="deck4">
+                    <div class="slide-caption"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Dots navigation -->
+        <div class="dots-container" id="dotsContainer"></div>
+        </div>
+
+        <!-- Text Breakdown Section -->
+        <div class="content-grid">
+            <div class="portfolio-card">
+                <h3>Structural Framing</h3>
+                <p>Providing strong, precise timber framing for new home builds, room additions, and structural
+                    alterations, ensuring ultimate stability and safety from the ground up.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Finish Carpentry</h3>
+                <p>Elevate your interiors with meticulous architectural details, including crown molding,
+                    baseboards,
+                    wainscoting, custom doors, and intricate decorative trim work.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Custom Woodwork & Outdoor Living</h3>
+                <p>Description: Bring warmth and character to your property with bespoke wooden structures,
+                    handcrafted
+                    architectural features, and durable outdoor decks built from premium timber.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer with Required Policy Links -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Rahmaya-Banks International Construction. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="portfolio.js"></script>
+    <script src="script.js"></script>
+    <!-- JavaScript for Hamburger Menu Toggle -->
+    <script src="burger.js"></script>
+</body>
+
+</html>
