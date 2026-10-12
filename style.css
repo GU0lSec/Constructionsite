@@ -38,8 +38,9 @@ html {
     border-bottom: .5px solid rgba(138, 145, 117, 0.3);
     padding: 1rem 1.5rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
 .logo {
@@ -148,48 +149,55 @@ html {
     color: var(--brand-sage);
 }
 
+/* --- Quote Section --- */
+
+.quote {
+    font-size: 20px;
+    border-style: outset;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 35px;
+    width: fit-content;
+    background-color: #F0F8FF;
+}
+
+
+
+
+
 /* --- Hero Section --- */
 .hero {
     position: relative;
     padding: 5rem 1.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-
+    
     border-bottom: 1px solid rgba(138, 145, 117, 0.2);
 }
 
-.hero-subtitle {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: var(--brand-sage);
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
 
 .hero-title {
+    
     font-family: Georgia, serif;
     height: auto;
-    width: 70%;
+    width: 1200px;
     letter-spacing: 0.02em;
-    margin-bottom: 1.5rem;
+    margin-bottom: .01rem;
+    padding: 10px;
 }
 
-.hero-desc {
-    color: var(--brand-muted);
-    font-size: 1rem;
-    margin-bottom: 2.5rem;
-}
-
-.hero-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.hero-title-o {
+    text-align: center;
+    font-family: Georgia, serif;
+    height: auto;
     width: 100%;
-    max-width: 20rem;
+    letter-spacing: 0.02em;
+    margin-bottom: .01rem;
 }
+
+
 
 .btn-primary {
     background-color: var(--brand-emerald);
@@ -227,6 +235,47 @@ html {
 .btn-secondary:focus {
     background-color: rgba(138, 145, 117, 0.2);
 }
+
+/* --- Front Card Section --- */
+
+
+.front-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.front-card-dir {
+    background: #ffffff;
+    
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border-top: 4px solid var(--brand-forest);
+    border-left: 1px solid rgba(138, 145, 117, 0.2);
+    border-right: 1px solid rgba(138, 145, 117, 0.2);
+    border-bottom: 1px solid rgba(138, 145, 117, 0.2);
+}
+
+.front-card-dir img {
+    font-size: 1.4rem;
+    color: var(--brand-muted);
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+    width: 90%;
+    padding: 10px;
+}
+
+.front-card p {
+    color: #634b4b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+
+
+
 
 /* --- Products / Services Section --- */
 .services-section {
@@ -430,7 +479,7 @@ html {
 }
 
 
-.mobile-subcategories{
+.mobile-subcategories {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
@@ -439,19 +488,20 @@ html {
     border-left: 2px solid rgba(138, 145, 117, 0.4);
 }
 
-.mobile-subcategories.hidden{
+.mobile-subcategories.hidden {
     display: none;
 }
 
-.mobile-sub-link{
+.mobile-sub-link {
     color: var(--brand-sage, #A8B563);
     font-size: 0.95rem;
     text-decoration: none;
 }
 
-.mobile-sub-link:hover{
+.mobile-sub-link:hover {
     color: #FFFFFF;
 }
+
 /* --- Extended Portfolio & Slideshow Styling --- */
 .portfolio-page-container {
     max-width: 1100px;
@@ -633,6 +683,7 @@ html {
     max-width: 1100px;
     margin: 3rem auto;
     padding: 0 1.5rem;
+    
 }
 
 .contact-header {
@@ -821,9 +872,10 @@ html {
 .footer {
     padding: 3rem 1.5rem;
     text-align: center;
-    background-color: var(--brand-charcoal);
+    background-color: #BEDFF1;
     border-top: 1px solid rgba(138, 145, 117, 0.3);
 }
+
 
 .footer-links {
     display: flex;
@@ -831,12 +883,14 @@ html {
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .footer-links a {
     color: var(--brand-muted);
     text-decoration: none;
     font-size: 0.85rem;
+    margin-bottom: 70px;
 }
 
 .footer-links a:hover {
@@ -849,6 +903,12 @@ html {
     color: var(--brand-muted);
 }
 
+h6 {
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+}
+
 /* --- Desktop Styles Override --- */
 @media (min-width: 768px) {
     .hamburger-btn {
@@ -857,6 +917,11 @@ html {
 
     .mobile-menu {
         display: none !important;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .nav-links {
@@ -881,14 +946,10 @@ html {
     }
 
     .hero-title {
-        font-size: 3.5rem;
+        width: 45%;
     }
 
-    .hero-actions {
-        flex-direction: row;
-        max-width: none;
-        justify-content: center;
-    }
+   
 
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -898,7 +959,7 @@ html {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .contact-content-grid{
+    .contact-content-grid {
         grid-template-columns: 1fr 1.5fr;
         gap: 2.5rem;
     }

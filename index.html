@@ -22,6 +22,7 @@
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
         </button>
+
         <!-- Desktop Links -->
         <div class="nav-links">
             <div class="dropdown">Services
@@ -66,19 +67,110 @@
         </div>
     </nav>
 
+
+    <div class="quote">
+        <a href="contact.html" class="mobile-link">Get A Free Quote</a>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero">
-        <h1>
-            <img class="hero-title" src="pictures/Black_Gold_KitchenSet.PNG" alt="">
+            <div>
+                <img class="hero-title-o" src="pictures/House_1_After.JPG" alt="">
+            </div>
+            
+    
 
-            <p class="hero-desc">A bright, modern, and open-concept kitchen featuring crisp white cabinetry, stainless
-                appliances and dark hardwood flooring.</p>
     </header>
 
-    <!-- Shop / Products Section -->
+
+    <div class="front-card">
+        <div class="front-card-dir">
+            <img class="hero-title" src="pictures/FrontStep_Porch.PNG" alt="">
+            <p>From ground-up builds to freestanding architectural stands and structural extensions, our
+                construction services handle everything from site excavation and heavy framing to complete turn-key
+                delivery with precision and structural integrity.</p>
+        </div>
+        <div class="front-card-dir">
+            <img class="hero-title" src="pictures/White_Gloss_SinkTop.PNG" alt="">
+            <p>Transforming how you use your spaces. Whether it's expanding your living footprint, reconfiguring
+                layouts, or building custom outdoor decks, our remodeling projects adapt structures to fit your
+                evolving lifestyle.</p>
+        </div>
+        <div class="front-card-dir">
+            <h3>Renovation</h3>
+            <p>Breathing new life into existing spaces. We specialize in modernizing kitchens, upgrading bathrooms,
+                refreshing finishes, and restoring architectural elements to combine contemporary performance with
+                timeless style.</p>
+        </div>
+    </div>
+
+
+    <!-- Main Contact Section -->
+    <main class="contact-page-container">
+        <header class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Ready to start your next construction, remodeling, or renovation project? Contact us today.</p>
+        </header>
+
+        <div class="contact-content-grid">
+            <!-- Contact Info Box -->
+            <div class="contact-info-card">
+                <h3>Project Inquiries</h3>
+                <p>We work closely with clients to bring architectural layouts and custom builds to life. Reach out
+                    using the form or through our direct details below:</p>
+
+                <ul class="contact-details-list">
+                    <li><strong>Email:</strong> info@rahmayabanksconstruction.com</li>
+                    <li><strong>Phone:</strong> (404) 502-5103</li>
+                    <li><strong>Hours:</strong> Mon - Fri: 8:00 AM – 5:00 PM</li>
+                </ul>
+            </div>
+
+            <!-- Contact Form Box -->
+            <div class="contact-form-card">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Service Needed</label>
+                        <select id="projectType" name="projectType">
+                            <option value="construction">Ground-Up Construction</option>
+                            <option value="remodeling">Remodeling</option>
+                            <option value="renovation">Renovation</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell us about your project scope..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="formSuccess" class="form-success-msg" style="display: none;">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </div>
+        </div>
+    </main>
+
 
     <!-- Footer with Required Policy Links -->
     <footer class="footer">
+        <h6>
+            RAHMAYA BANKS CONSTRUCTION
+        </h6>
+        <p></p>
         <div class="footer-links">
             <a href="contact.html">Contact Us</a>
             <a href="terms.html">Terms of Service</a>
