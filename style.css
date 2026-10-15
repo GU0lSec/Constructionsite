@@ -237,7 +237,7 @@ html {
 
 .front-card-dir img {
     font-family: Georgia, serif;
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     padding: 5rem;
 }
@@ -929,11 +929,6 @@ h6 {
         border: 1px solid var(--brand-olive);
     }
 
-
-
-    .front-card-grid {
-        width: 35%;
-    }
 
 
 
