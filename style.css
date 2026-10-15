@@ -157,6 +157,7 @@ html {
     padding: 10px 20px;
     margin: auto;
     margin-top: 35px;
+    margin-bottom: 40px;
     width: fit-content;
     background-color: #F0F8FF;
 }
@@ -166,36 +167,6 @@ html {
 
 
 /* --- Hero Section --- */
-.hero {
-    position: relative;
-    padding: 5rem 1.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    
-    border-bottom: 1px solid rgba(138, 145, 117, 0.2);
-}
-
-
-.hero-title {
-    
-    font-family: Georgia, serif;
-    height: auto;
-    width: 1200px;
-    letter-spacing: 0.02em;
-    margin-bottom: .01rem;
-    padding: 10px;
-}
-
-.hero-title-o {
-    text-align: center;
-    font-family: Georgia, serif;
-    height: auto;
-    width: 100%;
-    letter-spacing: 0.02em;
-    margin-bottom: .01rem;
-}
 
 
 
@@ -242,37 +213,51 @@ html {
 .front-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    margin-top: 3rem;
+    text-align: center;
+   
 }
 
-.front-card-dir {
+/*.front-card-dir {
     background: #ffffff;
-    
+
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     border-top: 4px solid var(--brand-forest);
     border-left: 1px solid rgba(138, 145, 117, 0.2);
     border-right: 1px solid rgba(138, 145, 117, 0.2);
     border-bottom: 1px solid rgba(138, 145, 117, 0.2);
+}*/
+
+.front-card-dir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .front-card-dir img {
-    font-size: 1.4rem;
-    color: var(--brand-muted);
-    margin-bottom: 1rem;
     font-family: Georgia, serif;
-    width: 90%;
-    padding: 10px;
+    max-width: 90%;
+    height: auto;
+    padding: 5rem;
 }
 
-.front-card p {
-    color: #634b4b;
-    font-size: 0.95rem;
+.front-card-dir p {
+    color: #0B0D0C;
+    font-size: 1.5rem;
     line-height: 1.6;
+    text-align: center;
+    
+    margin: 0;
 }
 
-
+.front-photo-card {
+    background: #ffffff;
+    padding: 5rem;
+    position: relative;
+    box-shadow: #FFFFFF;
+    align-items: center;
+}
 
 
 
@@ -683,7 +668,7 @@ html {
     max-width: 1100px;
     margin: 3rem auto;
     padding: 0 1.5rem;
-    
+
 }
 
 .contact-header {
@@ -904,9 +889,13 @@ html {
 }
 
 h6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    
     font-weight: normal;
-    font-size: 30px;
-    text-align: left;
+    font-size: 20px;
 }
 
 /* --- Desktop Styles Override --- */
@@ -945,11 +934,11 @@ h6 {
         padding: 7rem 1.5rem;
     }
 
-    .hero-title {
-        width: 45%;
+    .front-card-grid {
+        width: 35%;
     }
 
-   
+
 
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -972,4 +961,9 @@ h6 {
         padding: 60px 20px;
     }
 
+    h6{
+        flex-direction: row;
+        justify-self: space-between;
+        align-items: center;
+    }
 }
