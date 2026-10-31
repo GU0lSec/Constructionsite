@@ -113,7 +113,9 @@
 
             <!-- Contact Form Box -->
             <div class="contact-form-card">
-                <form id="contactForm">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="39600906-ce0c-44b5-a2f2-43852f16ab14">
+                    
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required placeholder="Enter your name">
