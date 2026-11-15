@@ -528,6 +528,8 @@ html {
     background-color: var(--brand-charcoal);
     overflow: hidden;
     margin: auto;
+    touch-action: pan-y;
+    user-select: none;
 }
 
 .slide {
